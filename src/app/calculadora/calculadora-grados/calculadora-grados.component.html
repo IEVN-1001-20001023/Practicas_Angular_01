@@ -1,0 +1,27 @@
+
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3"><div><h1>Calculadora De Grados</h1></div>
+            <label for="num1" class="form-label">Grados</label>
+            <input type="text" [(ngModel)]='Grados' class="form-control" name="num1" placeholder="Numero1">
+        </div>
+
+        <div class="form-check">
+          <label>
+            <input type="radio" name="Grados" value="centi" [(ngModel)]="Centigrados"> Centigrados
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="Grados" value="Far" [(ngModel)]="Farenheit"> Farenheit
+          </label>
+        </div>
+
+        <div class="mb-3">
+            <button (click)="validar()" class="btn btn-primary">Calcular</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>Resultado: {{resultado}}</h2>
+    </div>
+</div>
