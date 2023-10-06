@@ -1,0 +1,83 @@
+
+#entradas, #salidas, #acciones{
+    color: white;
+    font-size: 20px;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: white;
+    padding: 10px;
+}
+#entradas{
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    float: left;
+}
+#salidas{
+    width: 350px;
+    height: 150px;
+    margin: 1px;
+    float: right;
+}
+p{
+    color: white;
+    font-size: 50px;
+    align-content: center;
+}
+#BtnP{
+    float: left;
+}
+#BtnS{
+    float: right;
+}
+label{
+    font-size: 15px;
+}
+#Caja{
+    width: 180px;
+    float: right;
+}
+#CajaN{
+    float: right;
+}
+#Cont{
+    width: 1000px;
+    background-color: blue;
+    padding-top: 20px;
+}
+#acciones{
+    width: 350px;
+    height:150px;
+    margin: 1px;
+    float: right;
+    margin-top: 50px;
+}
+body{
+    width: auto;
+    height: 100px;
+}
+#Cinep{
+    font-size: 20px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: white;
+    height: 500px;
+    background-color: blue;
+}
+#Cajita{
+    background-image: url("../cinepolis/images/cinepolis.png");
+    background-size: 400px, 900px;
+    background-position: center;
+    height: 100px;
+    width: 1112px;
+    background-repeat: no-repeat;
+    background-color: #2E3192;
+    padding: 10px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: white;
+}
+#error{
+    font-size: 250px;
+    color: red;
+}

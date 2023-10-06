@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+</head>
+<body>
+<div id="Cinep"><div id="Cajita"><div id="error">{{error}}</div></div>
+    <div id="Cont">
+        <div id="entradas"><p>Entradas</p>
+                <label>Nombre:  </label>
+                <input [(ngModel)]="nombre" type="text" placeholder="Nombre" id="CajaN"><hr>
+                <label>Compradores:   </label> 
+                <input mat-input [(ngModel)]="cantidad" type="number" placeholder="Cantidad" id="Caja"><hr>
+                <label>Cineco</label> 
+                <input type="radio" name="tarjeta" value="si" [(ngModel)]="si">Si
+                <input type="radio" name="tarjeta" value="no" [(ngModel)]="no"> No<hr>
+                <label>Cantidad de Boletos:  </label>
+                <input [(ngModel)]="boletos" type="number" placeholder="Cantidad" id="Caja" (click)="verificar()">
+        </div>
+        <div id="salidas"><p>Salidas</p>
+                <label>Valor a pagar: {{total | currency}}</label> 
+        </div>
+        <div id="acciones"><p>Acciones</p>
+            <button mat-raised-button color="primary" id="BtnP" (click)="procesar()">Procesar</button>
+            <button mat-raised-button color="primary" id="BtnS">Salir</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
